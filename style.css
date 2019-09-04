@@ -1,0 +1,55 @@
+input {
+    border: solid 1p black;
+    
+  }
+header {
+  background-color: blanchedalmond;
+}
+  /*html {
+    background: url("background.jpg") no-repeat;
+    background-size: cover;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }*/
+#picture {
+    width: 60%; 
+    height: 60%; 
+    position: absolute; 
+    left: 40px; 
+    top: 40px; 
+    z-index: 0;
+}
+.stretch {
+    width:45%;
+    height:45%;
+}  
+#header1 {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    color: blue;
+  }
+#header2 {
+   display: flex;
+   justify-content: center;
+   margin: 1em;
+   color:blueviolet;
+ }  
+
+.hidden {
+    background-color: coral;
+    justify-content: center;
+    margin: 1em;
+  }
+ 
+  .btn-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10em;
+    
+ } 
+.letter {
+    color:black;  /*#fff*/
+    background-color:coral;
+    border-color: #4cae4c;
+    margin-bottom: 20px;
+} 
