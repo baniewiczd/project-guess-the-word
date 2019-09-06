@@ -4,23 +4,21 @@ input {
   }
 header {
   background-color: blanchedalmond;
+  /*background: url("background.jpg") no-repeat;
+  background-size: cover;
+  font-family: "Helvetica Neue", Arial, sans-serif */
 }
-  /*html {
-    background: url("background.jpg") no-repeat;
-    background-size: cover;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-  }*/
 #picture {
-    width: 60%; 
-    height: 60%; 
-    position: absolute; 
-    left: 40px; 
-    top: 40px; 
+    width: 30%; 
+    height: 30%; 
+    position: fixed; 
+    left: 20px; 
+    top: 20px; 
     z-index: 0;
 }
 .stretch {
-    width:45%;
-    height:45%;
+    width:75%;
+    height:75%;
 }  
 #header1 {
     display: flex;
@@ -32,24 +30,54 @@ header {
    display: flex;
    justify-content: center;
    margin: 1em;
-   color:blueviolet;
- }  
+   color: red;
+ }
+#attempts_number {
+  display: flex;
+  font-size: 70px;
+  font-weight: bold;
+  justify-content: center;
+  color:red;  
+} 
+
+#score {
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+  color: blue; 
+}
 
 .hidden {
-    background-color: coral;
+   /* background-color: coral;*/
+    color: black;
     justify-content: center;
     margin: 1em;
+    display: flex;
   }
- 
+  #btn-start {
+    display: flex;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    margin: 1em;  
+  }
+   
   .btn-div {
     display: flex;
     justify-content: space-between;
-    margin: 10em;
+    margin: 1em;
     
  } 
-.letter {
+.alphabet {
     color:black;  /*#fff*/
     background-color:coral;
     border-color: #4cae4c;
     margin-bottom: 20px;
 } 
+.letters {
+  margin: 1%;
+  border: 1px black solid;
+  padding: 4px;
+}

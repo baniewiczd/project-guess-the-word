@@ -11,48 +11,53 @@
 </head>
 
 <body>
-    <header>
+   <header>
         <div id="picture">
             <img src="Question.jpg" class="stretch" alt="" />
-        </div>
+        </div>  
         <div id="header1">
             <h1>Guess the Word</h1>
         </div>
         <div id="header2">
-            <h2>You have 10 attempts</h2>
+            <h2>Your attempts: </h2>
+            <p> <span id="attempts_number">10</span></p>
+        </div>
+        <button id="btn-start">PLAY</button>
+        <div>
+            <p id="score"></p>
         </div>
         <div class="hidden"></div>
         <div class="btn-div"> 
-            <button type="button" class="letter">A</button>
-            <button type="button" class="letter">B</button>
-            <button type="button" class="letter">C</button>
-            <button type="button" class="letter">D</button>
-            <button type="button" class="letter">E</button>
-            <button type="button" class="letter">F</button>
-            <button type="button" class="letter">G</button>
-            <button type="button" class="letter">H</button>
-            <button type="button" class="letter">I</button>
-            <button type="button" class="letter">J</button>
-            <button type="button" class="letter">K</button>
-            <button type="button" class="letter">L</button>
-            <button type="button" class="letter">M</button>
-            <button type="button" class="letter">N</button>
-            <button type="button" class="letter">O</button>
-            <button type="button" class="letter">P</button>
-            <button type="button" class="letter">Q</button>
-            <button type="button" class="letter">R</button>
-            <button type="button" class="letter">S</button>
-            <button type="button" class="letter">T</button>
-            <button type="button" class="letter">U</button>
-            <button type="button" class="letter">W</button>
-            <button type="button" class="letter">X</button>
-            <button type="button" class="letter">Y</button>
-            <button type="button" class="letter">Z</button>
-
+            <button type="button" class="alphabet">A</button>
+            <button type="button" class="alphabet">B</button>
+            <button type="button" class="alphabet">C</button>
+            <button type="button" class="alphabet">D</button>
+            <button type="button" class="alphabet">E</button>
+            <button type="button" class="alphabet">F</button>
+            <button type="button" class="alphabet">G</button>
+            <button type="button" class="alphabet">H</button>
+            <button type="button" class="alphabet">I</button>
+            <button type="button" class="alphabet">J</button>
+            <button type="button" class="alphabet">K</button>
+            <button type="button" class="alphabet">L</button>
+            <button type="button" class="alphabet">M</button>
+            <button type="button" class="alphabet">N</button>
+            <button type="button" class="alphabet">O</button>
+            <button type="button" class="alphabet">P</button>
+            <button type="button" class="alphabet">Q</button>
+            <button type="button" class="alphabet">R</button>
+            <button type="button" class="alphabet">S</button>
+            <button type="button" class="alphabet">T</button>
+            <button type="button" class="alphabet">U</button>
+            <button type="button" class="alphabet">W</button>
+            <button type="button" class="alphabet">X</button>
+            <button type="button" class="alphabet">Y</button>
+            <button type="button" class="alphabet">Z</button>
         </div>
         
-
+        <script src="data.js"></script>
         <script src="guessTheWord.js"></script>
+        <script src="main.js"></script>
     </header>
 </body>
 
