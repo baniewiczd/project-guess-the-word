@@ -31,12 +31,13 @@ Array.from(document.getElementsByClassName('alphabet')).forEach(alphabet => {
 
                 if (guessTheWordGame.checkIfDone()) {
                     document.getElementById('score').innerHTML = "Bravo!";
-                   document.getElementById newGame();
+                    document.getElementById('btn-start').onclick = newGame();
                 }
             }
         })
         if (guessTheWordGame.checkIfDone()) {
             document.getElementById('score').innerHTML = "Sorry!";
+            document.getElementById('btn-start').onclick = newGame();
             newGame();
         }
     };
