@@ -1,5 +1,4 @@
 //random to choose one word from Array words
-
 let guessTheWordGame;
 let hidden;
 

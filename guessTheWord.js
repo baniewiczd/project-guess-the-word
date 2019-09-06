@@ -1,4 +1,3 @@
-
 class GuessTheWordGame {
     constructor() {
         this.numberOfAttempts = 10;
