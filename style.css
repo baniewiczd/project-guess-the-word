@@ -8,14 +8,14 @@ header {
   background-size: cover;
   font-family: "Helvetica Neue", Arial, sans-serif */
 }
-#picture {
+/*#picture {
     width: 30%; 
     height: 30%; 
     position: fixed; 
     left: 20px; 
     top: 20px; 
     z-index: 0;
-}
+}*/
 .stretch {
     width:75%;
     height:75%;
@@ -80,4 +80,8 @@ header {
   margin: 1%;
   border: 1px black solid;
   padding: 4px;
+}
+
+button:disabled {
+  background-color:#4cae4c;
 }

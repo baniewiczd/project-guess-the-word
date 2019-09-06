@@ -1,6 +1,6 @@
-    
+
 class GuessTheWordGame {
-    constructor(){
+    constructor() {
         this.numberOfAttempts = 10;
         this.lettersTried = '';
         this.wordArray = [];
@@ -9,16 +9,22 @@ class GuessTheWordGame {
     }
     initGame() {
         this.wordToGuess();
-        document.getElementById('attempts_number').innerHTML = this.numberOfAttempts;     
+        document.getElementById('attempts_number').innerHTML = this.numberOfAttempts;
     }
-    wordToGuess(){
+    wordToGuess() {
         this.wordArray = words[Math.floor(Math.random() * words.length)].split('');
     }
 
     checkIfDone() {
-        if(guessTheWordGame.guessedLetters === guessTheWordGame.wordArray.length) return true;
-        if (guessTheWordGame.numberOfAttempts === 0) return true;
-        return false;
+        if (guessTheWordGame.guessedLetters === guessTheWordGame.wordArray.length) {
+            document.getElementById('score').innerHTML = "Bravo!";
+            return true;;
+        }
+        if (guessTheWordGame.numberOfAttempts === 0) {
+            document.getElementById('score').innerHTML = "Sorry!";
+            return true;; 
+        }
+        else return false;
     }
 }
 
