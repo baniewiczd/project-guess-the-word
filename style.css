@@ -3,10 +3,19 @@ input {
     
   }
 header {
-  background-color: blanchedalmond;
+    background-image: url(znaki2.jfif);
+    background-size:cover;
+    padding: 2rem;
+
+
+  /*background-color: blanchedalmond;
   /*background: url("background.jpg") no-repeat;
   background-size: cover;
   font-family: "Helvetica Neue", Arial, sans-serif */
+}
+
+body {
+  background-color:  rgb(74, 74, 214);
 }
 /*#picture {
     width: 30%; 
@@ -24,7 +33,7 @@ header {
     display: flex;
     justify-content: center;
     margin: 1em;
-    color: blue;
+    color: black;
   }
 #header2 {
    display: flex;
@@ -46,18 +55,26 @@ header {
   display: flex;
   justify-content: center;
   margin: 1em;
-  color: blue; 
+  color: orange; 
 }
 
 .hidden {
    /* background-color: coral;*/
     color: black;
-    justify-content: center;
+    
+
     margin: 1em;
     display: flex;
+    justify-content: center;
   }
   #btn-start {
+    height: 3rem;
+    width: 10rem;
+   
+    
+   
     display: flex;
+    justify-content: center;
     color: #fff;
     background-color: #5cb85c;
     border-color: #4cae4c;
@@ -74,7 +91,7 @@ header {
     color:black;  /*#fff*/
     background-color:coral;
     border-color: #4cae4c;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
 } 
 .letters {
   margin: 1%;

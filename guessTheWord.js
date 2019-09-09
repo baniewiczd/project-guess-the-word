@@ -13,17 +13,15 @@ class GuessTheWordGame {
     wordToGuess() {
         this.wordArray = words[Math.floor(Math.random() * words.length)].split('');
     }
-
-    checkIfDone() {
+    checkIfWon() {
         if (guessTheWordGame.guessedLetters === guessTheWordGame.wordArray.length) {
-            document.getElementById('score').innerHTML = "Bravo!";
-            return true;;
+            return true;
         }
+    }
+    checkIfLost() {
         if (guessTheWordGame.numberOfAttempts === 0) {
-            document.getElementById('score').innerHTML = "Sorry!";
-            return true;; 
+            return true;
         }
-        else return false;
     }
 }
 

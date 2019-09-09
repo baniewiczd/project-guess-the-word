@@ -4,8 +4,16 @@ let hidden;
 
 document.getElementById('btn-start').addEventListener("click", newGame);
 
+function activeAlphabet(){
+    Array.from(document.getElementsByClassName('alphabet')).forEach(alphabet => {
+        alphabet.disabled = false;
+    });   
+}
+
 function newGame() {
     guessTheWordGame = new GuessTheWordGame();
+
+    activeAlphabet();
     document.getElementById('score').innerHTML = "";
     hidden = document.getElementsByClassName('hidden')[0];
     let letters = '';
@@ -16,6 +24,11 @@ function newGame() {
     hidden.innerHTML = letters;
 }
 
+function blockAlphabet(){
+    Array.from(document.getElementsByClassName('alphabet')).forEach(alphabet => {
+        alphabet.disabled = 'true';
+    });   
+}
 
 //Event user click the Letter-buttons
 Array.from(document.getElementsByClassName('alphabet')).forEach(alphabet => {
@@ -30,7 +43,14 @@ Array.from(document.getElementsByClassName('alphabet')).forEach(alphabet => {
                 guessTheWordGame.guessedLetters = guessTheWordGame.guessedLetters + 1;
             }
         })
-        guessTheWordGame.checkIfDone();
+        if (guessTheWordGame.checkIfWon() === true){
+            document.getElementById('score').innerHTML = "Bravo!";
+            blockAlphabet();
+        }
+        else if (guessTheWordGame.checkIfLost() === true){
+            document.getElementById('score').innerHTML = "Sorry!";
+            blockAlphabet();
+        }
     };
 });
 
