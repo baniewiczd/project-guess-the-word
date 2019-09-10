@@ -8,7 +8,6 @@ class GuessTheWordGame {
     }
     initGame() {
         this.wordToGuess();
-        document.getElementById('attempts_number').innerHTML = this.numberOfAttempts;
     }
     wordToGuess() {
         this.wordArray = words[Math.floor(Math.random() * words.length)].split('');

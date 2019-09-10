@@ -1,1 +1,1 @@
-const words = ["SOS", "TATA"]// ["BERLIN", "LONDON", "BUDAPEST", "PARIS", "HELSINKI", "AMSTERDAM", "OSLO"];
+const words = ["BERLIN", "LONDON", "BUDAPEST", "PARIS", "HELSINKI", "AMSTERDAM", "OSLO"];
