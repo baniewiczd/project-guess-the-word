@@ -9,7 +9,7 @@ header {
 }
 
 body {
-  background-color:  rgb(74, 74, 214);
+  background-color:  rgb(76, 126, 76);
 }
 
 #header1 {
@@ -57,13 +57,14 @@ body {
     color: coral;
     font-weight: bold;
     background-color: rgb(34, 34, 99);
-    border-color: #4cae4c;
-    margin: 0,1em;  
+    border-color: black;
+    margin: 1em;  
   }
    
   .btn-div {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: left;
     margin: 1em;
     
  } 
@@ -72,7 +73,7 @@ body {
     width: 5rem;
     color:black;  /*#fff*/
     background-color:coral;
-    border-color: #4cae4c;
+    border-color: black;
     margin-bottom: 1px;
 } 
 .letters {

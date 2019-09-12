@@ -3,7 +3,7 @@ let guessTheWordGame;
 let hidden;
 
 document.getElementById('btn-start').addEventListener("click", newGame);
-
+blockAlphabet();
 function activeAlphabet() {
     Array.from(document.getElementsByClassName('alphabet')).forEach(alphabet => {
         alphabet.disabled = false;
@@ -48,7 +48,7 @@ Array.from(document.getElementsByClassName('alphabet')).forEach(alphabet => {
             document.getElementById('attempts_number').innerHTML = guessTheWordGame.numberOfAttempts;
         }
         if (guessTheWordGame.checkIfWon() === true) {
-            document.getElementById('score').innerHTML = "WON !!!";
+            document.getElementById('score').innerHTML = "BRAVO !!!";
             blockAlphabet();
         }
         else if (guessTheWordGame.checkIfLost() === true) {
