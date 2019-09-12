@@ -52,7 +52,7 @@ Array.from(document.getElementsByClassName('alphabet')).forEach(alphabet => {
             blockAlphabet();
         }
         else if (guessTheWordGame.checkIfLost() === true) {
-            document.getElementById('score').innerHTML = "LOST";
+            document.getElementById('score').innerHTML = "SORRY !";
             blockAlphabet();
         }
     };
